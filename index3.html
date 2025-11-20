@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kyshany's programs</title>
+  <style>
+	 body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fce4ec;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+  }
+
+  .container {
+    max-width: 800px;
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #d81b60;
+  }
+
+  h2 {
+    border-bottom: 2px solid #d81b60;
+    padding-bottom: 5px;
+    color: #ad1457;
+  }
+
+  p, li {
+    line-height: 1.6;
+  }
+
+  .section {
+    margin-bottom: 25px;
+  }
+  
+  <h1>This is where implimented Javascript to my c++ codes.</h1>
+  
+	
+</style>
+</head>
+<body>
+
+  
+  <h2>Add Two Numbers</h2>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p>Result: <span id="result"></span></p>
+
+ 
+  <h2>Multiply Two Numbers</h2>
+  <input type="number" id="pnum1" placeholder="Enter first number">
+  <input type="number" id="pnum2" placeholder="Enter second number">
+  <button onclick="calculateProduct()">Calculate Multiplication</button>
+  <p>Result: <span id="presult"></span></p>
+
+
+  <h2>Subtract Two Numbers</h2>
+  <input type="number" id="snum1" placeholder="Enter first number">
+  <input type="number" id="snum2" placeholder="Enter second number">
+  <button onclick="calculateDifference()">Calculate Subtraction</button>
+  <p>Result: <span id="sresult"></span></p>
+
+
+  <h2>Divide Two Numbers</h2>
+  <input type="number" id="dnum1" placeholder="Enter first number">
+  <input type="number" id="dnum2" placeholder="Enter second number">
+  <button onclick="calculateDivision()">Calculate Division</button>
+  <p>Result: <span id="dresult"></span></p>
+
+  <script>
+    function calculateSum() {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let sum = num1 + num2;
+      document.getElementById('result').textContent = sum;
+    }
+
+    function calculateProduct() {
+      let pnum1 = parseFloat(document.getElementById('pnum1').value);
+      let pnum2 = parseFloat(document.getElementById('pnum2').value);
+      let product = pnum1 * pnum2;
+      document.getElementById('presult').textContent = product;
+    }
+
+    function calculateDifference() {
+      let snum1 = parseFloat(document.getElementById('snum1').value);
+      let snum2 = parseFloat(document.getElementById('snum2').value);
+      let difference = snum1 - snum2;
+      document.getElementById('sresult').textContent = difference;
+    }
+
+    function calculateDivision() {
+      let dnum1 = parseFloat(document.getElementById('dnum1').value);
+      let dnum2 = parseFloat(document.getElementById('dnum2').value);
+      let division = dnum1 / dnum2;
+      document.getElementById('dresult').textContent = division;
+    }
+  </script>
+</body>
+</html>
